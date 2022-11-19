@@ -26,6 +26,7 @@
       </a>
       <p class="site-description">A remodelar a casa.</p>
       <p id="countdown"></p>
+      <p>Como não estar animado? 😎</p>
     </aside>
 
     <div class="reserved-info">
@@ -53,7 +54,7 @@
     minutes === 1 ? minutesWord = "minuto" : minutesWord = "minutos";
     seconds === 1 ? secondsWord = "segundo" : secondsWord = "segundos";
     // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = `Faltam apenas ${days} ${daysWord},  ${hours} ${hoursWord}, ${minutes} ${minutesWord} e ${seconds} ${secondsWord} para me poder reformar. Como não estar animado? 😎`;
+    document.getElementById("countdown").innerHTML = `Faltam apenas<br>${days} ${daysWord}<br>${hours} ${hoursWord}<br>${minutes} ${minutesWord}<br>e ${seconds} ${secondsWord}<br>para me poder reformar.`;
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
